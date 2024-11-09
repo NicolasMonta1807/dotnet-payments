@@ -1,0 +1,58 @@
+## Ignore the build output directories
+bin/
+obj/
+
+## User-specific files
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+## User-specific IDE directories
+.vs/
+.idea/
+
+## ASP.NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+## Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+## Windows Installer files
+*.pdb
+*.dll
+*.exe
+
+## ASP.NET Core logs
+logs/
+**/logs/
+
+## Local History
+.localhistory/
+
+## .NET Core Global Tools
+.dotnet/
+
+## Rider IDE
+.idea/
+
+## Visual Studio for Mac
+.vscode/
+
+## Windows Installer files
+Thumbs.db
+ehthumbs.db
+
+# Ignore dotnet tool cache
+.nuget/
+
+# User-specific files for Rider
+.idea/
+
+# Ignore generated files
+Generated\_Files/
