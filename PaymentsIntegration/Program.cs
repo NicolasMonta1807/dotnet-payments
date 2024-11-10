@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using PaymentsIntegration.Data;
+using PaymentsIntegration.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,6 +8,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
+// Business services
+builder.Services.AddScoped<PayTransactionService>();
 
 // Database connection
 var connectionString = builder.Configuration.GetConnectionString("PaymentsConnection");

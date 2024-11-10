@@ -3,9 +3,11 @@ using PaymentsIntegration.Model;
 
 namespace PaymentsIntegration.Data;
 
-public class PaymentsDbContext(DbContextOptions<PaymentsDbContext> context) : DbContext
+public class PaymentsDbContext : DbContext
 {
-    private readonly DbContextOptions<PaymentsDbContext> _context = context;
+    public PaymentsDbContext(DbContextOptions<PaymentsDbContext> options) : base(options)
+    {
+    }
 
     public DbSet<PayTransaction> Payments { get; set; }
 }

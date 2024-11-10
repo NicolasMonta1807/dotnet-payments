@@ -1,0 +1,49 @@
+@baseUrl = http://localhost:5157
+
+### Solicitud 1 - Pago con tarjeta válida
+POST {{baseUrl}}/paytransaction
+Content-Type: application/json
+
+{
+  "cardNumber": "4123654876348907",
+  "expirationDate": "08/25",
+  "amount": 120000
+}
+
+###
+
+### Solicitud 2 - Número de tarjeta expirado
+POST {{baseUrl}}/paytransaction
+Content-Type: application/json
+
+{
+  "cardNumber": "5105105105105100",
+  "expirationDate": "01/20",
+  "amount": 150000
+}
+
+###
+
+### Solicitud 3 - Tarjeta con formato incorrecto
+POST {{baseUrl}}/paytransaction
+Content-Type: application/json
+
+{
+  "cardNumber": "41236548763489",
+  "expirationDate": "08/25",
+  "amount": 200000
+}
+
+###
+
+### Solicitud 5 - Cantidad negativa
+POST {{baseUrl}}/paytransaction
+Content-Type: application/json
+
+{
+  "cardNumber": "6011515515510203",
+  "expirationDate": "10/26",
+  "amount": -5000
+}
+
+###
