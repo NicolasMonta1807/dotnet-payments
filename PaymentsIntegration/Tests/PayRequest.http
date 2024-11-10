@@ -5,7 +5,7 @@ POST {{baseUrl}}/paytransaction
 Content-Type: application/json
 
 {
-  "cardNumber": "4123654876348907",
+  "cardNumber": "4111111111111111",
   "expirationDate": "08/25",
   "amount": 120000
 }

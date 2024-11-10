@@ -53,8 +53,7 @@ public class PayTransactionService
             return false;
         }
 
-        // return ValidateLuhn(cardNumber);
-        return true;
+        return ValidateLuhn(cardNumber);
     }
 
     private bool IsValidExpirationDate(string expirationDate)
