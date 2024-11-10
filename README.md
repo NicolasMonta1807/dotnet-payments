@@ -57,6 +57,14 @@ dotnet run
 
 This will start the server on your local environment, allowing you to test the payment service through the configured API routes.
 
+To access endpoint descriptions, this project comes with a Swagger interface by default accessible from this url (using given default port):
+
+```
+http://localhost:5157/swagger/index.html
+```
+
+Also, this program comes with a set of tests in form of http requests that can be found in `./PaymentsIntegration/Tests/PayRequest.http`
+
 ## License
 
 This project is licensed under the GPL 3.0 License - see the [LICENSE](LICENSE) file for more details.
